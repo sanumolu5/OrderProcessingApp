@@ -1,5 +1,10 @@
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\bin\Debug\net8.0\publish\web.config
 C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\bin\Debug\net8.0\appsettings.json
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\bin\Debug\net8.0\publish\OrderProcessingApp.deps.json
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\bin\Debug\net8.0\publish\OrderProcessingApp.runtimeconfig.json
 C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\bin\Debug\net8.0\OrderProcessingApp.staticwebassets.runtime.json
 C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\bin\Debug\net8.0\OrderProcessingApp.exe
 C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\bin\Debug\net8.0\OrderProcessingApp.deps.json

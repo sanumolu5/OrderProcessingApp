@@ -10,5 +10,18 @@ namespace OrderProcessingApp.Models
 
         public decimal Discount {get; set;}
         public decimal FinalAmount {get; set;}
+
+        // Discount calculation
+        public void CalculateDiscount() {
+             if (OrderAmount >= 100 && CustomerType == "Loyal")
+            {
+                Discount = OrderAmount * 0.10m;
+            }
+            else
+            {
+                Discount = 0;
+            }
+            FinalAmount = OrderAmount - Discount;
+        }
     }
 }

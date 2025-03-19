@@ -1,0 +1,7 @@
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\publish\OrderProcessingApp.exe
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\publish\appsettings.Development.json
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\publish\appsettings.json
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\publish\OrderProcessingApp.dll
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\publish\OrderProcessingApp.deps.json
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\publish\OrderProcessingApp.runtimeconfig.json
+C:\Users\lotus\OneDrive\Desktop\DotNet\OrderProcessingApp\OrderProcessingApp\publish\OrderProcessingApp.pdb

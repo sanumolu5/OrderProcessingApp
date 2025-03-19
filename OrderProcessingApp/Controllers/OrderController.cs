@@ -10,14 +10,7 @@ namespace OrderProcessingApp.Controllers {
 
         [HttpPost]
         public IActionResult ProcessOrder(Order order) {
-            if(order.OrderAmount >= 100 && order.CustomerType =="Loyal") {
-                order.Discount = order.OrderAmount * 0.10m;                
-            } else {
-                order.Discount = 0;
-            }
-
-            order.FinalAmount = order.OrderAmount - order.Discount;
-
+            order.CalculateDiscount();
             return View("Result", order);
         }
     }
