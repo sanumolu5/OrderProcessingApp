@@ -1,0 +1,12 @@
+@model OrderProcessingApp.Models.Order
+
+<h2>Order Summary</h2>
+
+<div class="result-box">
+    <p><strong>Order Amount:</strong> $@Model.OrderAmount</p>
+    <p><strong>Customer Type:</strong> @Model.CustomerType</p>
+    <p><strong>Discount:</strong> $@Model.Discount</p>
+    <p><strong>Final Amount:</strong> $@Model.FinalAmount</p>
+</div>
+
+<a href="/Order" class="back-link">Back to Order Page</a>
