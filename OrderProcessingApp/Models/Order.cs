@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 namespace OrderProcessingApp.Models
 {
     public class Order {
-        [Range(1, double.MaxValue, ErrorMessage = "Order amount must be greater than 0")]
+        [Range(0.01, double.MaxValue, ErrorMessage = "Order amount must be greater than zero.")]
         public decimal OrderAmount {get; set;}
 
         [Required]
@@ -14,7 +14,12 @@ namespace OrderProcessingApp.Models
 
         // Discount calculation
         public void CalculateDiscount() {
-             if (OrderAmount >= 100 && CustomerType == "Loyal")
+            if (OrderAmount < 0) 
+            {
+                throw new InvalidOperationException("Order amount cannot be negative.");
+            }
+
+            if (OrderAmount >= 100 && CustomerType == "Loyal")
             {
                 Discount = OrderAmount * 0.10m;
             }
