@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 namespace OrderProcessingApp.Models
 {
     public class Order {
+        [Range(1, double.MaxValue, ErrorMessage = "Order amount must be greater than 0")]
         public decimal OrderAmount {get; set;}
 
         [Required]

@@ -39,10 +39,24 @@ namespace OrderProcessingApp.Tests {
 
             // Act
             order.CalculateDiscount();
-            
+
             // Assert
             Assert.Equal(0, order.Discount);
             Assert.Equal(99, order.FinalAmount);
+        }
+
+        [Fact]
+        public void LoyalCustomer_WithOrderExactly100_Gets10PercentDiscount()
+        {
+            // Arrange
+            var order = new Order { OrderAmount = 100, CustomerType = "Loyal" };
+
+            // Act
+            order.CalculateDiscount();
+
+            // Assert
+            Assert.Equal(10, order.Discount);
+            Assert.Equal(90, order.FinalAmount);
         }
     }
 }

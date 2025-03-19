@@ -5,6 +5,7 @@
 <form asp-action="ProcessOrder" method="post">
     <label>Order Amount:</label>
     <input type="number" step="0.01" class="form-control" asp-for="OrderAmount" required />
+    <span asp-validation-for="OrderAmount" class="text-danger"></span>
     
     <label>Customer Type:</label>
     <select asp-for="CustomerType">
@@ -14,3 +15,7 @@
     
     <button type="submit">Submit</button>
 </form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
