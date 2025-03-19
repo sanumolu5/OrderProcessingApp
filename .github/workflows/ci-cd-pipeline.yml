@@ -27,15 +27,26 @@ jobs:
       - name: Build the application
         run: dotnet build --configuration Release --no-restore
 
+      # Debug Build
+      - name: Debug Build
+        run: dotnet build --configuration Release --no-restore || exit 1
+
       - name: Run unit tests
         run: dotnet test --no-restore --verbosity normal
 
       - name: Publish application
         run: dotnet publish -c Release -o ./publish
 
+      # Debug Publish
+      - name: Debug Publish
+        run: dotnet publish -c Release -o ./publish || exit 1
+
+      # List published files
+      - name: List Files After Publish
+        run: ls -R ./publish || exit 1
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
           name: published-app
           path: ./publish
-          
